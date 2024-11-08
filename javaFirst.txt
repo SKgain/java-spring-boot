@@ -1,0 +1,91 @@
+//1st Program
+
+class Car{
+    private int TopSpeed;  //Attribute
+
+    //Constructor Method
+    public Car(){
+        System.out.println("Car is Emotion !!");
+    }
+
+    //Normal Methods
+    public void Model(){
+        System.out.println("The model is supra MK5 !!");
+    }
+    public void setSpeed(int TopSpeed){
+        this.TopSpeed = TopSpeed;
+    }
+    public int getSpeed(){
+        return TopSpeed;
+    }
+
+    //Static Block
+    static {
+        System.out.println("Car is Static !!");
+    }
+
+
+    //inner Class
+    public class Supra{
+        public void innerSupra(){
+            System.out.println(" Calling Supra from Inside !!");
+
+        }
+    }
+
+
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+    Car car = new Car();
+    car.Model();
+    car.setSpeed(400);
+    System.out.println("Top speed of the Car is "+car.getSpeed());
+    Calling Inner Class
+     car.Supra s=car.new Supra();
+     s.innerSupra();
+    }
+}
+
+// 2nd Program
+
+class stringMethods{
+    private String s1="Ami";
+    private String s2="Tumi";
+}
+//Length finding
+public void stringLength()
+{
+    System.out.print("The length of s1: "+s1.length());
+}
+//concat string
+public void StringConcat()
+{
+    String s3=s1.concat(s2);
+    System.out.print("After concating: "+s3);
+}
+//Reverse
+public void stringReverse(){
+    StringBuilder sb=new StringBuilder();
+    sb.append(s1);
+    System.out.print("After reverse: "+sb.reverse());
+}
+//Replacing
+public void ReplaceString(){
+
+    System.out.print("After Replaced: ");
+    s1.replace("am", "ami");
+}
+public class firstClass_P2 {
+    public static void main(String[] args) {
+
+        stringMethods sm=new stringMethods();
+        sm.stringLength();
+        sm.stringConcat();
+        sm.stringReverse();
+        sm.ReplaceString();
+
+    }
+}
