@@ -41,10 +41,10 @@ public class Main {
 
     Car car = new Car();
     car.Model();
-    car.setSpeed(400);
+    car.setSpeed(200);
     System.out.println("Top speed of the Car is "+car.getSpeed());
     Calling Inner Class
-     car.Supra s=car.new Supra();
+     Car.Supra s=Car.new Supra();
      s.innerSupra();
     }
 }
@@ -52,8 +52,8 @@ public class Main {
 // 2nd Program
 
 class stringMethods{
-    private String s1="Ami";
-    private String s2="Tumi";
+    private String s1="Hello";
+    private String s2=" World";
 }
 //Length finding
 public void stringLength()
